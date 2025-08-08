@@ -3,13 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Look Across The Water - The Motion Picture</title>
-
-  <script type="module">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
 
   <meta name="description" content="Look Across The Water: The Toronto Islands' most recent cinematic extravaganza.">
   <meta property="og:title" content="Look Across The Water">
@@ -17,12 +11,168 @@
   <meta property="og:locale" content="en_CA">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.lookacrossthewater.ca">
+  <meta property="og:image" content="/og-preview.jpg">
   <link rel="canonical" href="https://www.lookacrossthewater.ca">
 
-</head>
+  <link rel="stylesheet" href="https://use.typekit.net/ybr3vxh.css">
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <style>
+    :root {
+      --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      --font-title: "itc-benguiat-condensed", serif;
+      --color-bg: #0a0a0a;
+      --color-text: #eaeaea;
+      --color-accent: #c0a36e;
+      --color-nav-bg: #111;
+      --color-nav-border: #333;
+    }
+
+    html {
+      box-sizing: border-box;
+      font-size: 100%;
+    }
+
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: var(--font-main);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-family: var(--font-title);
+      letter-spacing: 0.05em;
+    }
+
+    h2 {
+      font-family: var(--font-title);
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      background: var(--color-nav-bg);
+      border-top: 1px solid var(--color-nav-border);
+    }
+
+    nav a {
+      padding: 1rem;
+      color: var(--color-accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .linktree-button {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      margin: 2rem auto;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--color-accent);
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 1.25rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+</head>
 <body>
-  COMING SOON...
-<!-- <script src="/assets/js/script.js" type="module"></script> -->
+  <header>
+    <h1>Look Across The Water</h1>
+    <p>The Toronto Islands' most recent cinematic extravaganza.</p>
+  </header>
+
+  <main>
+    <a class="linktree-button" href="https://linktr.ee/LookAcrossTheWater" target="_blank" rel="noopener">Visit Linktree</a>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>A group of friends miss the last ferry and get stranded overnight on the Toronto Islands, only to be stalked by a mysterious cult. Shot on location with an all-local cast and crew, <em>Look Across The Water</em> is a lo-fi, character-driven horror film.</p>
+    </section>
+
+    <!--
+    <section id="trailer">
+      <h2>Trailer</h2>
+      <p><em>Coming September 2025.</em></p>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-teaser-id" title="Teaser" frameborder="0" allowfullscreen></iframe>
+    </section>
+    -->
+
+    <section id="socials">
+      <h2>Follow Us</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/lookacrossthewaterfilm" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@latw.film" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="https://www.youtube.com/@lookacrossthewater" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#socials">Socials</a>
+  </nav>
+
+  <script type="module">
+    // Future enhancements here
+  </script>
 </body>
 </html>
