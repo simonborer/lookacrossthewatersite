@@ -152,11 +152,16 @@
       text-decoration: none;
     }
 
-    picture img {
+    .main-banner {
+      margin-bottom: 2rem;
+    }
+
+    .main-banner iframe {
       display: block;
       width: 100%;
+      aspect-ratio: 16 / 9;
       height: auto;
-      margin-bottom: 2rem;
+      border: 0;
     }
 
     @media (min-width: 768px) {
@@ -193,10 +198,15 @@
 </head>
 <body>
   <header>
-    <picture>
-      <source srcset="banner-mobile.jpg" media="(max-width: 768px)">
-      <img src="banner.jpg" alt="A still from Look Across The Water">
-    </picture>
+    <div class="main-banner" aria-label="Look Across The Water banner video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/l8PK7fQOPIc"
+        title="Look Across The Water video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
     <h1>Look Across<br>The Water</h1>
     <p>A horror film made with love on the Toronto Islands.</p>
   </header>
