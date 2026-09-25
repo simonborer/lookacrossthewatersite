@@ -176,6 +176,39 @@
       background: var(--color-bg);
     }
 
+    .screening-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem 1.5rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 0.35rem solid var(--color-red);
+      background: var(--color-panel);
+      text-align: center;
+    }
+
+    .screening-banner p {
+      margin: 0;
+      line-height: 1.25;
+    }
+
+    .screening-banner strong,
+    .screening-banner span {
+      display: block;
+    }
+
+    .screening-banner strong {
+      font-family: var(--font-title);
+      font-size: 1.35rem;
+      text-transform: uppercase;
+    }
+
+    .screening-banner span {
+      color: var(--color-muted);
+      font-size: 0.95rem;
+    }
+
     .trailer-frame {
       background: #000;
       border-bottom: 0.35rem solid var(--color-red);
@@ -582,6 +615,14 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" id="trailer">
+    <div class="screening-banner">
+      <p>
+        <strong>Toronto premiere · <time datetime="2026-10-23">Friday, October 23, 2026</time></strong>
+        <span>Presented by Wavelength</span>
+      </p>
+      <a class="button button-primary" href="https://link.dice.fm/r07c0b93b444">Get tickets on DICE</a>
+    </div>
+
     <div class="trailer-frame" aria-label="Official trailer">
       <iframe
         src="https://www.youtube-nocookie.com/embed/l8PK7fQOPIc"
